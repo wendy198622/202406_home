@@ -1,0 +1,151 @@
+
+    header{
+        width: 360px;
+        position: relative;
+        padding: 60px 80px 100px;
+        @media (max-width: 1280px){
+            width: 280px;
+        }
+        @media (max-width:1080px){
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: static;
+            overflow: visible;
+            padding: 40px;
+        }
+        &:before{
+            content: "";
+            width: 130%;
+            height: calc(100% - 100px);
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            background: url(../img/menu_bg.png) center center no-repeat;
+            background-size: cover;
+            @media (max-width:1080px){
+                height: 100%;
+            }
+        }
+        .logo{
+            width: 140px;
+            position: relative;
+            z-index: 2;
+        }
+        .nav_box{
+            margin-top: 140px;
+            @media (max-width:1080px){
+                display: none;
+                margin-top: 0;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                z-index: 10;
+                top: 0;
+                right: 0;
+                background: url(../img/menu_bg.png) center center no-repeat;
+                background-size: cover;
+                padding: 100px 0;
+                // box-sizing: border-box;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                li{
+                    display: inline-block;
+                    position: relative;
+                    @media (max-width:1080px){
+                        text-align: center;
+                    }
+                    a{
+                        color: #fff;
+                        font-family: "Noto Serif TC", serif;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 140%;
+                        letter-spacing: 3px;
+                        padding: 16px 0;
+                        transition: all .3s;
+                        display: none;
+                        overflow: hidden;
+                    }
+                    &:before{
+                        content: "";
+                        width: 0px;
+                        height: 2px;
+                        background: #fff;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transition: all .3s;
+                    }
+                    &:hover{
+                        a{
+                            padding-left: 52px;
+                            letter-spacing: 6px;
+                        }
+                        &:before{
+                            width: 40px;
+                        }
+                    }
+                }
+            }
+        }
+        #menu-toggle{
+            background-color: transparent;
+            padding: 0;
+            display: none;
+            z-index: 12;
+            @media (max-width:1080px){
+                display: block;
+            }
+    
+            span{
+                display: block;
+                background: #fff;
+                width: 36px;
+                height: 4px;
+                border-radius: 10px;
+                margin: 8px 0;
+                position: relative;
+                transition: all .3s;
+                @media (max-width: 800px){
+                    width: 30px;
+                    // height: 3px;
+                    // margin: 6px 0;
+                }
+            }
+    
+            &:hover{
+                cursor: pointer;
+            }
+    
+            &.active{
+    
+                span{
+    
+                    &:nth-child(2){
+                        background: transparent !important;
+                    }
+    
+                    &:nth-child(1){
+                        transform: rotate(-220deg);
+                        margin-top: 10px;
+                    }
+    
+                    &:nth-child(3){
+                        transform: rotate(220deg);
+                        margin-top: -24px;
+                    }
+                }
+    
+                h6{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+        
+    }

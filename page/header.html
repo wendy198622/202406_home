@@ -1,0 +1,49 @@
+<div class="logo">
+    <a href="index.html">
+        <img src="../img/logo_white.svg" alt="">
+    </a>
+</div>
+
+
+<nav class="nav_box">
+    <ul>
+        <li>
+            <a href="aboutus.html">關於家田</a>
+        </li>
+        <li>
+            <a href="news.html">最新消息</a>
+        </li>
+        <li>
+            <a href="promotion.html">熱銷個案</a>
+        </li>
+        <li>
+            <a href="history.html">歷年業績</a>
+        </li>
+        <li>
+            <a href="progress.html">工程進度</a>
+        </li>
+        <li>
+            <a href="contactus.html">聯絡我們</a>
+        </li>
+    </ul>
+</nav>
+
+
+<button id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+
+<Script>
+    $(document).ready(function () {
+
+        $("#menu-toggle").click(function () {
+            $(".nav_box").animate({width:'toggle',right:'0'},500);
+            $(".nav_box a").animate({width:'toggle',opacity:'1'},300);
+            $(this).toggleClass("active");
+        });
+
+    });
+</Script>
