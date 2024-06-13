@@ -257,6 +257,23 @@ header .logo {
   z-index: 2;
 }
 
+header .logo a.pc {
+  display: block;
+}
+
+header .logo a.mob {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  header .logo a.pc {
+    display: none;
+  }
+  header .logo a.mob {
+    display: block;
+  }
+}
+
 header .nav_box {
   margin-top: 140px;
 }
