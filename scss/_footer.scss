@@ -11,21 +11,24 @@ footer{
     nav{
         margin-top: 40px;
         ul{
+            width: 800px;
+            margin: 0 auto;
             display: flex;
-            justify-content: center;
-                @media (max-width:640px){
-                    flex-direction: column;
-                    text-align: center;
-                }
+            justify-content: space-around;
+            @media (max-width:800px){
+                width: 96%;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
             li{
-                display: inline-flex;                
-                @media (max-width:640px){
-                    display: inline-block;
+                display: inline-flex; 
+                @media (max-width:800px){
+                    margin: 0 10px;
                 }
                 a{
                     color: #fff;
                     font-size: 20px;
-                    line-height: 1.2;
+                    line-height: 2;
                     font-weight: 500;
                     letter-spacing: 4px;
                     @media (max-width:640px){                        
@@ -34,9 +37,9 @@ footer{
                 }
             }
             li + li{
-                margin-left: 40px;
+                // margin-left: 40px;
                 @media (max-width:640px){
-                    margin-left: 0;
+                    // margin-left: 0;
                 }
             }
         }
