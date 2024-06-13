@@ -36,6 +36,41 @@ img{ width: 100%; display: block;}
     .mob{ display: block;}
 }
 
+h3{
+    font-size: 28px;
+    line-height: 140%;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+h4{
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+h5{
+    font-size: 20px;
+    line-height: 160%;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+h6{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+p{
+    font-size: 18px;
+    line-height: 160%;
+    font-family: $font-sans;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
 input, button, select, textarea{
   appearance:none;   
   -moz-appearance:none;   
