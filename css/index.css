@@ -541,6 +541,26 @@ footer .copyright {
   }
 }
 
+.top .home_kv .photo.pc {
+  display: block;
+}
+
+.top .home_kv .photo.mob {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .top .home_kv .photo {
+    height: 100vh;
+  }
+  .top .home_kv .photo.pc {
+    display: none;
+  }
+  .top .home_kv .photo.mob {
+    display: block;
+  }
+}
+
 .top .home_kv .title {
   width: 40px;
   position: absolute;
@@ -585,7 +605,6 @@ footer .copyright {
           align-items: center;
   background: url(../img/menu_bg.png) center center no-repeat;
   background-size: 100% 100%;
-  outline: 1px solid red;
 }
 
 @media (max-width: 1200px) {
