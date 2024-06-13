@@ -705,24 +705,24 @@ footer .copyright {
   }
 }
 
-.news_frame {
+.progress_frame {
   padding: 100px 0;
 }
 
-.news_frame .container {
+.progress_frame .container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
 }
 
 @media (max-width: 1440px) {
-  .news_frame .container {
+  .progress_frame .container {
     width: calc(100% - 40px);
     margin: 0 auto;
   }
 }
 
-.news_frame .news_topic {
+.progress_frame .progress_topic {
   width: 280px;
   margin: 0 auto;
   position: relative;
@@ -732,12 +732,12 @@ footer .copyright {
 }
 
 @media (max-width: 600px) {
-  .news_frame .news_topic {
+  .progress_frame .progress_topic {
     width: 60%;
   }
 }
 
-.news_frame .news_topic .title {
+.progress_frame .progress_topic .title {
   font-size: 28px;
   font-weight: 600;
   line-height: 1.2;
@@ -749,7 +749,7 @@ footer .copyright {
   margin: 0 auto;
 }
 
-.news_frame .news_topic img {
+.progress_frame .progress_topic img {
   width: 250px;
   position: absolute;
   z-index: 0;
@@ -759,39 +759,39 @@ footer .copyright {
           transform: translateX(-50%);
 }
 
-.news_frame .news_all {
+.progress_frame .progress_all {
   margin-top: 40px;
   padding-bottom: 60px;
 }
 
-.news_frame .news_all .pagingBox {
+.progress_frame .progress_all .pagingBox {
   overflow: hidden;
 }
 
-.news_frame .news_all .pagingBox .item {
-  width: 25%;
+.progress_frame .progress_all .pagingBox .item {
+  width: 33.3333%;
   float: left;
   padding: 0 10px;
   margin-bottom: 40px;
 }
 
 @media (max-width: 960px) {
-  .news_frame .news_all .pagingBox .item {
+  .progress_frame .progress_all .pagingBox .item {
     width: 50%;
   }
 }
 
-.news_frame .news_all .pagingBox .item .photo {
+.progress_frame .progress_all .pagingBox .item .photo {
   width: 100%;
   height: 0;
   padding-bottom: 67%;
 }
 
-.news_frame .news_all .pagingBox .item .info h6 {
+.progress_frame .progress_all .pagingBox .item .info h6 {
   text-align: center;
 }
 
-.news_frame .news_all .pagingBox .item .info h5 {
+.progress_frame .progress_all .pagingBox .item .info h5 {
   margin-top: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -802,7 +802,7 @@ footer .copyright {
           box-sizing: border-box;
 }
 
-.news_frame .news_all .pagingBox .item .info p {
+.progress_frame .progress_all .pagingBox .item .info p {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -812,7 +812,7 @@ footer .copyright {
           box-sizing: border-box;
 }
 
-.news_frame .news_all .pagingBox .item .link {
+.progress_frame .progress_all .pagingBox .item .link {
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
@@ -827,7 +827,7 @@ footer .copyright {
   border-radius: 8px;
 }
 
-.news_frame .news_all .pagingBox .item .link span {
+.progress_frame .progress_all .pagingBox .item .link span {
   vertical-align: bottom;
   font-size: 20px;
   -webkit-transition: all .3s;
@@ -835,8 +835,8 @@ footer .copyright {
   color: #fff;
 }
 
-.news_frame .news_all .pagingBox .item a:hover .link span {
+.progress_frame .progress_all .pagingBox .item a:hover .link span {
   -webkit-transform: translateX(4px);
           transform: translateX(4px);
 }
-/*# sourceMappingURL=news.css.map */
+/*# sourceMappingURL=progress.css.map */

@@ -36,15 +36,21 @@ img{ width: 100%; display: block;}
     .mob{ display: block;}
 }
 
+h2{
+    font-size: 32px;
+    line-height: 160%;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
 h3{
     font-size: 28px;
-    line-height: 140%;
+    line-height: 160%;
     font-weight: 600;
     letter-spacing: 4px;
 }
 h4{
     font-size: 24px;
-    line-height: 140%;
+    line-height: 160%;
     font-weight: 600;
     letter-spacing: 4px;
 }
@@ -192,11 +198,82 @@ span.animate_e{
         width: 36px;
         border-radius: 36px;
         margin: 0 6px;
-        border: 1px solid #231815;
+        // border: 1px solid #231815;
         &.active_page, &:hover{
             background: #231815;
             a{
                 color: #fff;
+            }
+        }
+    }
+}
+
+
+.top{
+    display: flex;
+    flex-direction: row;
+    @media (max-width:1080px){
+        flex-direction: column;
+    }
+    .top_kv{
+        width: calc(100% - 360px);
+        padding: 100px 0 0;
+        position: relative;
+        @media (max-width: 1280px){
+            width: calc(100% - 280px);
+        }
+        @media (max-width:1080px){
+            width: 100%;
+            padding-top: 0;
+        }
+        .photo_outer{
+            overflow: hidden;
+        }
+        .photo{
+            width: auto;
+            height: 1080px;
+            overflow: hidden;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: kv 20s infinite alternate;
+            @keyframes kv {
+                0%{ transform: scale(1);}
+                100%{ transform: scale(1.1);}   
+            }
+            &.pc{ display: block;}
+            &.mob{ display: none;}
+            @media (max-width:1080px){
+                height: 80vh;
+                &.pc{display: none;}
+                &.mob{ display: block;}
+            }
+        }
+        .title{
+            width: 40px;
+            position: absolute;
+            right: 40px;
+            top: 160px;
+            z-index: 2;
+            writing-mode: vertical-rl;
+            font-size: 32px;
+            line-height: 140%;
+            font-weight: 600;
+            // letter-spacing: 2px;
+            @media (max-width:1080px){
+                right: 60px;
+                top: 60px;
+            }
+            span{
+                background: #fff;
+                display: block;
+                float: left;
+                padding: 8px 0;
+                // margin: 0 4px;
+            }
+            hr{
+                border: 0;
+                margin: 8px;
             }
         }
     }

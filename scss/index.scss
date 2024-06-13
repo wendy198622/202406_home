@@ -3,75 +3,8 @@
 @import '_footer';
 
 .top{
-    display: flex;
-    flex-direction: row;
-    @media (max-width:1080px){
-        flex-direction: column;
-    }
-    .home_kv{
-        width: calc(100% - 360px);
-        padding: 100px 0 0;
-        position: relative;
-        @media (max-width: 1280px){
-            width: calc(100% - 280px);
-        }
-        @media (max-width:1080px){
-            width: 100%;
-            padding-top: 0;
-        }
-        .photo_outer{
-            overflow: hidden;
-        }
-        .photo{
-            width: auto;
-            height: 1080px;
-            overflow: hidden;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            animation: kv 20s infinite alternate;
-            @keyframes kv {
-                0%{ transform: scale(1);}
-                100%{ transform: scale(1.1);}   
-            }
-            &.pc{ display: block;}
-            &.mob{ display: none;}
-            @media (max-width:1080px){
-                height: 80vh;
-                &.pc{display: none;}
-                &.mob{ display: block;}
-            }
-        }
-        .title{
-            width: 40px;
-            position: absolute;
-            right: 40px;
-            top: 160px;
-            z-index: 2;
-            writing-mode: vertical-rl;
-            font-size: 32px;
-            line-height: 140%;
-            font-weight: 600;
-            // letter-spacing: 2px;
-            @media (max-width:1080px){
-                right: 60px;
-                top: 60px;
-            }
-            span{
-                background: #fff;
-                display: block;
-                float: left;
-                padding: 8px 0;
-                // margin: 0 4px;
-            }
-            hr{
-                border: 0;
-                margin: 8px;
-            }
-        }
-    }
-
 }
+
 .home_aboutus{
     // min-height: 800px;
     margin: 160px 0;
@@ -167,7 +100,6 @@
     }
 }
 
-
 .home_cases{
     padding: 120px 0;
     // padding-left: calc(260/1920*100%);
@@ -213,6 +145,7 @@
                     margin-top: 40px;
                     background: $primary-color;
                     display: inline-block;
+                    border-radius: 8px;
                     a{
                         padding: 10px 20px;
                         color: #fff;
@@ -277,9 +210,9 @@
     padding: 60px 0;
     .container{
         width: 100%;
-        max-width: 1280px;
+        max-width: 1440px;
         margin: 0 auto;
-        @media (max-width: 1280px){
+        @media (max-width: 1440px){
             width: calc(100% - 40px);
             margin: 0 auto;
         }
@@ -304,7 +237,7 @@
             margin: 0 auto;
         }
         img{
-            width: 140px;
+            width: 250px;
             position: absolute;
             z-index: 0;
             top: 0;
@@ -370,18 +303,26 @@
         .swiper-button-next_news{
             display: inline-block;
             position: absolute;
+            z-index: 12;
             right: 0;
             top: auto;
             bottom: 0;
             background: none;
+            &:hover{
+                cursor: pointer;
+            }
         }
         .swiper-button-prev_news{
             display: inline-block;
             position: absolute;
+            z-index: 12;
             left: 0;
             top: auto;
             bottom: 0;
             background: none;
+            &:hover{
+                cursor: pointer;
+            }
         }
         .swiper-button-next_news span, .swiper-button-prev_news span{
             color: #fff;
@@ -401,61 +342,5 @@
                 background: $primary-color;;
             }
         }
-    }
-}
-
-.home_contactus .topic .title_en span.animate_e{
-    margin-right: -8px;
-}
-
-.slide-animation {
-    animation: slide-zoom 10s ease-out alternate infinite;
-}
-
-@keyframes slide-zoom {
-    0% {
-        -webkit-transform: scale(1.15);
-        transform: scale(1.15)
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1)
-    }
-}
-
-@keyframes logo_ani{
-    0%, 100% {
-        opacity: 0;
-        filter: blur(5px);
-    }
-
-    30%, 70% {
-        opacity: 1;
-        filter: blur(0px);
-    }
-}
-
-@keyframes bg_ani{
-    100% {
-        opacity: 0;
-        filter: blur(5px);
-    }
-
-    0%, 30%, 70% {
-        opacity: 1;
-        filter: blur(0px);
-    }
-}
-
-@keyframes photo_ani{
-    0% {
-        opacity: 0;
-        filter: blur(5px);
-    }
-
-    100% {
-        opacity: 1;
-        filter: blur(0px);
     }
 }
