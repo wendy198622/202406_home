@@ -125,6 +125,7 @@ input, button, select, textarea {
 
 .popup .popup_content {
   text-align: center;
+  background-color: #fff;
   color: #000000;
   position: absolute;
   top: 0;
@@ -160,6 +161,9 @@ input, button, select, textarea {
   width: 320px;
   height: 60px;
   line-height: 60px;
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 
 .popup .popup_content .close {
@@ -683,24 +687,24 @@ footer .copyright {
   letter-spacing: 1px;
 }
 
-.top header .nav_box ul .news a {
+.top header .nav_box ul .progress a {
   padding-left: 52px;
   letter-spacing: 6px;
 }
 
 @media (max-width: 1080px) {
-  .top header .nav_box ul .news a {
+  .top header .nav_box ul .progress a {
     padding-left: 0;
     letter-spacing: 3px;
   }
 }
 
-.top header .nav_box ul .news:before {
+.top header .nav_box ul .progress:before {
   width: 40px;
 }
 
 @media (max-width: 1080px) {
-  .top header .nav_box ul .news:before {
+  .top header .nav_box ul .progress:before {
     display: none;
   }
 }
@@ -711,7 +715,7 @@ footer .copyright {
 
 .progress_frame .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1360px;
   margin: 0 auto;
 }
 

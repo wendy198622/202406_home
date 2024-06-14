@@ -125,6 +125,7 @@ input, button, select, textarea {
 
 .popup .popup_content {
   text-align: center;
+  background-color: #fff;
   color: #000000;
   position: absolute;
   top: 0;
@@ -160,6 +161,9 @@ input, button, select, textarea {
   width: 320px;
   height: 60px;
   line-height: 60px;
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 
 .popup .popup_content .close {
@@ -683,161 +687,232 @@ footer .copyright {
   letter-spacing: 1px;
 }
 
-.theme_contact {
-  padding: 220px 0 120px;
-  background: url(../img/contactus_bg.jpg) center top no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+.top header .nav_box ul .contactus a {
+  padding-left: 52px;
+  letter-spacing: 6px;
 }
 
-@media (max-width: 800px) {
-  .theme_contact {
-    padding: 160px 0;
+@media (max-width: 1080px) {
+  .top header .nav_box ul .contactus a {
+    padding-left: 0;
+    letter-spacing: 3px;
   }
 }
 
-.theme_contact .container {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
+.top header .nav_box ul .contactus:before {
+  width: 40px;
 }
 
-@media (max-width: 1400px) {
-  .theme_contact .container {
-    width: 96%;
+@media (max-width: 1080px) {
+  .top header .nav_box ul .contactus:before {
+    display: none;
   }
 }
 
-@media (max-width: 800px) {
-  .theme_contact .container {
-    padding: 0 20px;
+.contactus_frame {
+  padding: 100px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media (max-width: 1200px) {
+  .contactus_frame {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 0;
+    margin-bottom: -5px;
   }
 }
 
-.theme_contact .topic {
-  text-align: center;
+.contactus_frame .map {
+  width: 50%;
 }
 
-.theme_contact .topic h3 {
-  font-size: 32px;
-  line-height: 1.2;
-  font-weight: 600;
-  letter-spacing: 3px;
-}
-
-@media (max-width: 640px) {
-  .theme_contact .topic h3 {
-    font-size: 24px;
-  }
-}
-
-.theme_contact .topic h4 {
-  font-family: "Playfair Display", serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 1.4;
-  letter-spacing: 2px;
-}
-
-@media (max-width: 640px) {
-  .theme_contact .topic h4 {
-    font-size: 28px;
-  }
-}
-
-.theme_contact .form {
-  padding: 60px;
-  margin-top: 60px;
-  background: #E7E7E7;
-  overflow: hidden;
-}
-
-@media (max-width: 800px) {
-  .theme_contact .form {
-    padding: 20px;
-  }
-}
-
-.theme_contact .form .subtitle {
-  width: 100%;
-  float: left;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 40px;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-.theme_contact .form .item {
-  width: 100%;
-  float: left;
-}
-
-.theme_contact .form .item.w50 {
-  width: calc((100% - 20px) / 2);
-}
-
-@media (max-width: 800px) {
-  .theme_contact .form .item.w50 {
+@media (max-width: 1200px) {
+  .contactus_frame .map {
     width: 100%;
+    margin-top: 60px;
   }
 }
 
-.theme_contact .form .item.mr20 {
-  margin-right: 20px;
+.contactus_frame .map iframe {
+  width: 100%;
+  height: 960px;
 }
 
-@media (max-width: 800px) {
-  .theme_contact .form .item.mr20 {
+.contactus_frame .content {
+  width: 40%;
+  margin-right: 5%;
+}
+
+@media (max-width: 1200px) {
+  .contactus_frame .content {
+    width: 70%;
+    margin-top: -40px;
     margin-right: 0;
   }
 }
 
-.theme_contact .form .item input, .theme_contact .form .item select, .theme_contact .form .item textarea {
+@media (max-width: 800px) {
+  .contactus_frame .content {
+    width: 80%;
+    margin-top: -10px;
+  }
+}
+
+.contactus_frame .content .title {
+  width: 1080px;
+  float: right;
+  text-align: right;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-size: 160px;
+  line-height: 1;
+  white-space: nowrap;
+  position: relative;
+  z-index: 2;
+  color: #0A3F73;
+  margin-top: -15px;
+}
+
+@media (max-width: 1440px) {
+  .contactus_frame .content .title {
+    width: 840px;
+    font-size: 120px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contactus_frame .content .title {
+    width: 100%;
+    font-size: 120px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 1080px) {
+  .contactus_frame .content .title {
+    width: 100%;
+    font-size: 96px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 640px) {
+  .contactus_frame .content .title {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 520px) {
+  .contactus_frame .content .title {
+    font-size: 13vw;
+    margin-top: 0;
+  }
+}
+
+.contactus_frame .content .clear {
+  clear: both;
+}
+
+.contactus_frame .content p {
+  margin: 50px 0 50px;
+  font-weight: 400;
+}
+
+.contactus_frame .content .form {
+  overflow: hidden;
+}
+
+.contactus_frame .content .form .item {
+  width: 100%;
+  float: left;
+}
+
+.contactus_frame .content .form .item.w50 {
+  width: calc((100% - 20px) / 2);
+}
+
+@media (max-width: 800px) {
+  .contactus_frame .content .form .item.w50 {
+    width: 100%;
+  }
+}
+
+.contactus_frame .content .form .item.mr20 {
+  margin-right: 20px;
+}
+
+@media (max-width: 800px) {
+  .contactus_frame .content .form .item.mr20 {
+    margin-right: 0;
+  }
+}
+
+.contactus_frame .content .form .item input, .contactus_frame .content .form .item select, .contactus_frame .content .form .item textarea {
   width: 100%;
   height: 52px;
   margin-bottom: 16px;
-  font-size: 22px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 160%;
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 2px;
 }
 
-.theme_contact .form .item textarea {
+.contactus_frame .content .form .item textarea {
   width: 100%;
   height: 120px;
   resize: none;
   display: block;
 }
 
-.theme_contact .form .item ::-webkit-input-placeholder {
-  font-size: 22px;
-  line-height: 32px;
-  color: #92867B;
-  font-weight: 600;
+.contactus_frame .content .form .item ::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 160%;
+  color: #231815;
+  font-weight: 400;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
-.theme_contact .form .item :-ms-input-placeholder {
-  font-size: 22px;
-  line-height: 32px;
-  color: #92867B;
-  font-weight: 600;
+.contactus_frame .content .form .item :-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 160%;
+  color: #231815;
+  font-weight: 400;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
-.theme_contact .form .item ::-ms-input-placeholder {
-  font-size: 22px;
-  line-height: 32px;
-  color: #92867B;
-  font-weight: 600;
+.contactus_frame .content .form .item ::-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 160%;
+  color: #231815;
+  font-weight: 400;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
-.theme_contact .form .item ::placeholder {
-  font-size: 22px;
-  line-height: 32px;
-  color: #92867B;
-  font-weight: 600;
+.contactus_frame .content .form .item ::placeholder {
+  font-size: 18px;
+  line-height: 160%;
+  color: #231815;
+  font-weight: 400;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
-.theme_contact .form .item input[type="checkbox"] {
+.contactus_frame .content .form .item input[type="checkbox"] {
   width: 20px;
   height: 20px;
   background: #fff;
@@ -846,42 +921,42 @@ footer .copyright {
   float: left;
 }
 
-.theme_contact .form .item input[type="checkbox"]:checked {
+.contactus_frame .content .form .item input[type="checkbox"]:checked {
   background-image: url(../img/check.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.theme_contact .form .item .checktxt {
+.contactus_frame .content .form .item .checktxt {
   width: calc(100% - 40px);
-  float: right;
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 3px;
 }
 
-.theme_contact .form .item .checktxt a {
+.contactus_frame .content .form .item .checktxt a {
   display: inline-block;
   font-size: 14px;
   text-decoration: underline;
 }
 
-.theme_contact .form button {
-  width: 300px;
-  height: 52px;
-  background: #C9A063;
-  font-size: 30px;
-  line-height: 30px;
-  margin: 20px auto 0;
+.contactus_frame .content .form .item.term {
+  width: calc(100% - 180px);
+  float: left;
+}
+
+.contactus_frame .content .form button {
+  width: 180px;
+  float: right;
+  background: #0A3F73;
+  color: #fff;
+  font-size: 28px;
+  line-height: 160%;
+  font-weight: 500;
+  letter-spacing: 2px;
   display: block;
-  font-weight: 600;
 }
 
-@media (max-width: 800px) {
-  .theme_contact .form button {
-    width: 100%;
-    float: left;
-  }
-}
-
-.theme_contact .form button:hover {
+.contactus_frame .content .form button:hover {
   cursor: pointer;
 }
 
