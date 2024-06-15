@@ -1,0 +1,169 @@
+@import '_setting';
+@import '_header';
+@import '_footer';
+
+.top{
+    header{
+        .nav_box{
+            ul{
+                .promotion{
+                    a{
+                        padding-left: 52px;
+                        letter-spacing: 6px;
+                        @media (max-width:1080px){
+                            padding-left: 0;
+                            letter-spacing: 3px;
+                        }
+                    }
+                    &:before{
+                        width: 40px;
+                        @media (max-width:1080px){
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.promotion_frame{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;  
+    flex-direction: row;  
+    @media (max-width: 1200px){
+        flex-direction: column; 
+
+        padding-bottom: 100px;
+    }
+    .bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        opacity: .1;
+        transform: scale(1.2);
+        transform-origin: center bottom;
+        @media (max-width: 1200px){
+            img{
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+    .photo{
+        width: calc(1320/1920*100%);
+        @media (max-width: 1200px){
+            width: 100%;
+        }
+        @media (max-width: 800px){
+            width: 100%;
+        }
+    }
+    .content{
+        width: calc(500/1920*100%);
+        margin: 0 auto;
+        @media (max-width: 1200px){
+            width: 70%;
+            margin-top: 40px;
+        }
+        @media (max-width: 800px){
+            width: 80%;
+        }
+        .title{
+            width: 1080px;
+            float: right;
+            text-align: right;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 160px;
+            line-height: 1;
+            white-space: nowrap;
+            position: relative;
+            z-index: 2;
+            color: $primary-color;
+            margin-top: -15px;
+            @media (max-width: 1440px){
+                width: 840px;
+                font-size: 120px;
+            }
+            @media (max-width: 1200px){
+                width: 100%;
+                font-size: 120px;
+                text-align: left;
+                margin-top: 0;
+            }
+            @media (max-width: 1080px){
+                width: 100%;
+                font-size: 100px;
+                text-align: left;
+            }
+            @media (max-width: 640px){
+                font-size: 80px;
+            }
+            @media (max-width: 520px){
+                font-size: 15vw;
+                margin-top: 0;
+            }
+        }
+        .clear{
+            clear: both;
+        }
+        .filter{
+            overflow: hidden;
+            margin-top: 60px;
+            li{
+                font-family: $font-sans;
+                float: left;
+                color: #fff;
+                background: $primary-color;
+                padding: 4px 12px;
+            }
+            li + li{
+                margin-left: 20px;
+            }
+        }
+        h4{
+            margin-top: 20px;
+        }
+        h2{
+            color: $primary-color;
+            margin: 40px 0;
+        }
+
+        .link{
+            text-align: center;
+            vertical-align: middle;
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-top: 60px;
+            background: $primary-color;
+            display: inline-block;;
+            border-radius: 8px;
+            a{
+                color: #fff;
+                padding: 10px 20px;
+                letter-spacing: 2px;
+                font-weight: 600;
+            }
+            span{
+                vertical-align: bottom;
+                font-size: 20px;
+                transition: all .3s;
+                color: #fff;
+            }
+            &:hover{
+                span{
+                    transform: translateX(4px);
+                }
+    
+            }
+        }
+    }
+}
+

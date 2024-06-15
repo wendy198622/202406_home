@@ -300,30 +300,6 @@ span.animate_e {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-animation: kv 20s infinite alternate;
-          animation: kv 20s infinite alternate;
-}
-
-@-webkit-keyframes kv {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
-
-@keyframes kv {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
 }
 
 .top .top_kv .photo.pc {
@@ -383,6 +359,8 @@ header {
   width: 360px;
   position: relative;
   padding: 60px 80px 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (max-width: 1280px) {
@@ -608,6 +586,84 @@ header #menu-toggle.active span:nth-child(3) {
 header #menu-toggle.active h6 {
   opacity: 0;
   visibility: hidden;
+}
+
+.casepage header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  padding: 60px 80px;
+}
+
+@media (max-width: 1080px) {
+  .casepage header {
+    padding: 40px 24px;
+  }
+}
+
+.casepage header:before {
+  width: 100%;
+  height: 80%;
+  background: none;
+}
+
+.casepage header .logo {
+  width: 160px;
+}
+
+.casepage header .logo a.pc {
+  display: none;
+}
+
+.casepage header .logo a.mob {
+  display: block;
+}
+
+.casepage header .nav_box {
+  display: none;
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background: url(../img/menu_bg.png) center center no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.casepage header .nav_box ul li {
+  text-align: center;
+}
+
+.casepage header .nav_box ul li a {
+  display: none;
+}
+
+.casepage header .nav_box ul li:hover a {
+  padding-left: 0;
+  letter-spacing: 3px;
+}
+
+.casepage header .nav_box ul li:hover:before {
+  display: none;
+}
+
+.casepage header #menu-toggle {
+  display: block;
 }
 
 footer {

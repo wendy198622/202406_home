@@ -14,12 +14,12 @@
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="css/progress.css" />
+    <link rel="stylesheet" type="text/css" href="css/history.css" />
     <!-- js -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/pagination.min.js"></script>
+    <!-- <script src="js/pagination.min.js"></script> -->
 
 
 </head>
@@ -31,31 +31,47 @@
             <header id="header"></header>
             <div class="top_kv">
                 <div class="photo_outer">
-                    <div class="photo pc" style="background-image: url(img/progress_kv_img.png)">
+                    <div class="photo pc" style="background-image: url(img/history_kv_img.png)">
                     </div>
-                    <div class="photo mob" style="background-image: url(img/progress_kv_img_mob.png)">
+                    <div class="photo mob" style="background-image: url(img/history_kv_img_mob.png)">
                     </div>
                 </div>
                 <div class="title">
-                    <span class="animate wow fadeIn" data-wow-duration="2s" data-wow-delay="0.1s">工</span>
-                    <span class="animate wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">程</span>
-                    <span class="animate wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">進</span>
-                    <span class="animate wow fadeIn" data-wow-duration="2s" data-wow-delay="0.7s">度</span>
+                    <span class="animate wow fadeIn" data-wow-duration="2s" data-wow-delay="0.1s">歷</span>
+                    <span class="animate wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">年</span>
+                    <span class="animate wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">業</span>
+                    <span class="animate wow fadeIn" data-wow-duration="2s" data-wow-delay="0.7s">績</span>
                 </div>
             </div>
         </div>
-        <div class="progress_frame">
+        <div class="history_frame">
             <div class="container">
-                <div class="progress_topic">
-                    <img src="img/Progress.svg" alt="">
-                    <div class="title">工程進度</div>
+                <div class="history_filter">
+                    <ul>
+                        <li>
+                            <select>
+                                <option>選擇地區</option>
+                                <option>北區</option>
+                                <option>中區</option>
+                                <option>南區</option>
+                                <option>東區</option>
+                            </select>   
+                        </li>
+                        <li>
+                            <select>
+                                <option>選擇類別</option>
+                                <option>電梯華廈</option>
+                                <option>公寓</option>
+                                <option>透天住宅</option>
+                            </select>   
+                        </li>
+                    </ul>
                 </div>
-                <div class="progress_all">
-                    <input type='hidden' id='current_page' />
-                    <input type='hidden' id='show_per_page' />
-                    <div id="pagingBox" class="pagingBox">
+                <div class="history_all">
+                    <div class="year_outer">
+                        <div class="year">2024</div>
                         <div class="item">
-                            <a href="newspage.html">
+                            <a href="casepage.html">
                                 <div class="photo">
                                     <img src="img/progress_img.png" alt="">
                                 </div>
@@ -73,205 +89,7 @@
                             </a>
                         </div>
                         <div class="item">
-                            <a href="newspage.html">
-                                <div class="photo">
-                                    <img src="img/progress_img.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h5>家田富築</h5>
-                                    <h2>湖畔景觀正三房</h2>
-                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
-                                </div>
-                                <div class="link">
-                                    more
-                                    <span class="material-icons">
-                                        arrow_forward
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="newspage.html">
-                                <div class="photo">
-                                    <img src="img/progress_img.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h5>家田富築</h5>
-                                    <h2>湖畔景觀正三房</h2>
-                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
-                                </div>
-                                <div class="link">
-                                    more
-                                    <span class="material-icons">
-                                        arrow_forward
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="newspage.html">
-                                <div class="photo">
-                                    <img src="img/progress_img.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h5>家田富築</h5>
-                                    <h2>湖畔景觀正三房</h2>
-                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
-                                </div>
-                                <div class="link">
-                                    more
-                                    <span class="material-icons">
-                                        arrow_forward
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="newspage.html">
-                                <div class="photo">
-                                    <img src="img/progress_img.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h5>家田富築</h5>
-                                    <h2>湖畔景觀正三房</h2>
-                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
-                                </div>
-                                <div class="link">
-                                    more
-                                    <span class="material-icons">
-                                        arrow_forward
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="newspage.html">
-                                <div class="photo">
-                                    <img src="img/progress_img.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h5>家田富築</h5>
-                                    <h2>湖畔景觀正三房</h2>
-                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
-                                </div>
-                                <div class="link">
-                                    more
-                                    <span class="material-icons">
-                                        arrow_forward
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="newspage.html">
-                                <div class="photo">
-                                    <img src="img/progress_img.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h5>家田富築</h5>
-                                    <h2>湖畔景觀正三房</h2>
-                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
-                                </div>
-                                <div class="link">
-                                    more
-                                    <span class="material-icons">
-                                        arrow_forward
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="newspage.html">
-                                <div class="photo">
-                                    <img src="img/progress_img.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h5>家田富築</h5>
-                                    <h2>湖畔景觀正三房</h2>
-                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
-                                </div>
-                                <div class="link">
-                                    more
-                                    <span class="material-icons">
-                                        arrow_forward
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="newspage.html">
-                                <div class="photo">
-                                    <img src="img/progress_img.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h5>家田富築</h5>
-                                    <h2>湖畔景觀正三房</h2>
-                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
-                                </div>
-                                <div class="link">
-                                    more
-                                    <span class="material-icons">
-                                        arrow_forward
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="newspage.html">
-                                <div class="photo">
-                                    <img src="img/progress_img.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h5>家田富築</h5>
-                                    <h2>湖畔景觀正三房</h2>
-                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
-                                </div>
-                                <div class="link">
-                                    more
-                                    <span class="material-icons">
-                                        arrow_forward
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="newspage.html">
-                                <div class="photo">
-                                    <img src="img/progress_img.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h5>家田富築</h5>
-                                    <h2>湖畔景觀正三房</h2>
-                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
-                                </div>
-                                <div class="link">
-                                    more
-                                    <span class="material-icons">
-                                        arrow_forward
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="newspage.html">
-                                <div class="photo">
-                                    <img src="img/progress_img.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <h5>家田富築</h5>
-                                    <h2>湖畔景觀正三房</h2>
-                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
-                                </div>
-                                <div class="link">
-                                    more
-                                    <span class="material-icons">
-                                        arrow_forward
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="newspage.html">
+                            <a href="casepage.html">
                                 <div class="photo">
                                     <img src="img/progress_img.png" alt="">
                                 </div>
@@ -289,7 +107,231 @@
                             </a>
                         </div>
                     </div>
-                    <div id='page_navigation'></div>
+                    <div class="year_outer">
+                        <div class="year">2023</div>
+                        <div class="item">
+                            <a href="casepage.html">
+                                <div class="photo">
+                                    <img src="img/progress_img.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5>家田富築</h5>
+                                    <h2>湖畔景觀正三房</h2>
+                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
+                                </div>
+                                <div class="link">
+                                    more
+                                    <span class="material-icons">
+                                        arrow_forward
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="casepage.html">
+                                <div class="photo">
+                                    <img src="img/progress_img.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5>家田富築</h5>
+                                    <h2>湖畔景觀正三房</h2>
+                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
+                                </div>
+                                <div class="link">
+                                    more
+                                    <span class="material-icons">
+                                        arrow_forward
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="casepage.html">
+                                <div class="photo">
+                                    <img src="img/progress_img.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5>家田富築</h5>
+                                    <h2>湖畔景觀正三房</h2>
+                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
+                                </div>
+                                <div class="link">
+                                    more
+                                    <span class="material-icons">
+                                        arrow_forward
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="casepage.html">
+                                <div class="photo">
+                                    <img src="img/progress_img.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5>家田富築</h5>
+                                    <h2>湖畔景觀正三房</h2>
+                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
+                                </div>
+                                <div class="link">
+                                    more
+                                    <span class="material-icons">
+                                        arrow_forward
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="year_outer">
+                        <div class="year">2020</div>
+                        <div class="item">
+                            <a href="casepage.html">
+                                <div class="photo">
+                                    <img src="img/progress_img.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5>家田富築</h5>
+                                    <h2>湖畔景觀正三房</h2>
+                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
+                                </div>
+                                <div class="link">
+                                    more
+                                    <span class="material-icons">
+                                        arrow_forward
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="casepage.html">
+                                <div class="photo">
+                                    <img src="img/progress_img.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5>家田富築</h5>
+                                    <h2>湖畔景觀正三房</h2>
+                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
+                                </div>
+                                <div class="link">
+                                    more
+                                    <span class="material-icons">
+                                        arrow_forward
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="casepage.html">
+                                <div class="photo">
+                                    <img src="img/progress_img.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5>家田富築</h5>
+                                    <h2>湖畔景觀正三房</h2>
+                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
+                                </div>
+                                <div class="link">
+                                    more
+                                    <span class="material-icons">
+                                        arrow_forward
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="casepage.html">
+                                <div class="photo">
+                                    <img src="img/progress_img.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5>家田富築</h5>
+                                    <h2>湖畔景觀正三房</h2>
+                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
+                                </div>
+                                <div class="link">
+                                    more
+                                    <span class="material-icons">
+                                        arrow_forward
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="casepage.html">
+                                <div class="photo">
+                                    <img src="img/progress_img.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5>家田富築</h5>
+                                    <h2>湖畔景觀正三房</h2>
+                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
+                                </div>
+                                <div class="link">
+                                    more
+                                    <span class="material-icons">
+                                        arrow_forward
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="casepage.html">
+                                <div class="photo">
+                                    <img src="img/progress_img.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5>家田富築</h5>
+                                    <h2>湖畔景觀正三房</h2>
+                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
+                                </div>
+                                <div class="link">
+                                    more
+                                    <span class="material-icons">
+                                        arrow_forward
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="casepage.html">
+                                <div class="photo">
+                                    <img src="img/progress_img.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5>家田富築</h5>
+                                    <h2>湖畔景觀正三房</h2>
+                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
+                                </div>
+                                <div class="link">
+                                    more
+                                    <span class="material-icons">
+                                        arrow_forward
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="year_outer">
+                        <div class="year">2018</div>
+                        <div class="item">
+                            <a href="casepage.html">
+                                <div class="photo">
+                                    <img src="img/progress_img.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5>家田富築</h5>
+                                    <h2>湖畔景觀正三房</h2>
+                                    <p>絕對不容錯過的優質好宅，大園指標建商，品牌經營深耕茁壯，買屋就要買國家認證品質的品牌好宅！</p>
+                                </div>
+                                <div class="link">
+                                    more
+                                    <span class="material-icons">
+                                        arrow_forward
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -304,82 +346,11 @@
 
         $('#header').load('page/header.html');
         $('#footer').load('page/footer.html');
-
-
-        // $('.send').on('click', function () {
-        //     setTimeout(() => {
-        //         $('.popup_send').removeClass('is_acted');
-        //     }, 6000)
-        // });
     })
-
-    jQuery(document).ready(function () {
-
-        var show_per_page = 9;
-
-        var number_of_items = $('#pagingBox').children().size();
-
-        var number_of_pages = Math.ceil(number_of_items / show_per_page);
-
-        $('#current_page').val(0);
-        $('#show_per_page').val(show_per_page);
-        var navigation_html = '<div class="previous_link"><a href="javascript:previous();"><span class="material-icons">chevron_left</span></a></div>';
-        var current_link = 0;
-        while (number_of_pages > current_link) {
-            navigation_html += '<div class="page_link" longdesc="' + current_link + '"><a href="javascript:go_to_page(' + current_link + ')" >' + (current_link + 1) + '</a></div>';
-            current_link++;
-        }
-        navigation_html += '<div class="next_link"><a href="javascript:next();"><span class="material-icons">chevron_right</span></a></div>';
-
-        $('#page_navigation').html(navigation_html);
-
-        $('#page_navigation .page_link:first').addClass('active_page');
-
-        $('#pagingBox').children().css('display', 'none');
-
-        $('#pagingBox').children().slice(0, show_per_page).css('display', 'block');
-
-    });
-
-
-    //Pagination JS
-
-    function previous() {
-
-        new_page = parseInt($('#current_page').val()) - 1;
-        if ($('.active_page').prev('.page_link').length == true) {
-            go_to_page(new_page);
-        }
-
-    }
-
-    function next() {
-        new_page = parseInt($('#current_page').val()) + 1;
-        if ($('.active_page').next('.page_link').length == true) {
-            go_to_page(new_page);
-        }
-
-    }
-    function go_to_page(page_num) {
-
-        var show_per_page = parseInt($('#show_per_page').val());
-
-        start_from = page_num * show_per_page;
-
-        end_on = start_from + show_per_page;
-
-        $('#pagingBox').children().css('display', 'none').slice(start_from, end_on).css('display', 'block');
-
-        $('.page_link[longdesc=' + page_num + ']').addClass('active_page').siblings('.active_page').removeClass('active_page');
-
-        $('#current_page').val(page_num);
-    }
 
 
     //select
-    /*
-    Reference: http://jsfiddle.net/BB3JK/47/
-    */
+    /* Reference: http://jsfiddle.net/BB3JK/47/ */
 
     $('select').each(function () {
         var $this = $(this), numberOfOptions = $(this).children('option').length;

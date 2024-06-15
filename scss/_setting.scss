@@ -240,11 +240,7 @@ span.animate_e{
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            animation: kv 20s infinite alternate;
-            @keyframes kv {
-                0%{ transform: scale(1);}
-                100%{ transform: scale(1.1);}   
-            }
+            
             &.pc{ display: block;}
             &.mob{ display: none;}
             @media (max-width:1080px){

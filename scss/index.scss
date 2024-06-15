@@ -3,6 +3,15 @@
 @import '_footer';
 
 .top{
+    .top_kv{
+        .photo{
+            animation: kv 20s infinite alternate;
+            @keyframes kv {
+                0%{ transform: scale(1);}
+                100%{ transform: scale(1.1);}   
+            }
+        }
+    }
 }
 
 .home_aboutus{

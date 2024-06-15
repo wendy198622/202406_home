@@ -210,9 +210,13 @@
     cursor: pointer;
     display: inline-block;
     position: relative;
-    font-size: 16px;
     background: #fff;
     margin-bottom: 12px;
+    font-size: 18px;
+    // line-height: 160%;
+    font-family: $font-sans;
+    letter-spacing: 3px;
+    font-weight: 400;
 }
 .select + .select{
     margin-left: 20px;
@@ -223,16 +227,14 @@
     right: 0;
     bottom: 0;
     left: 0;
-    // border-bottom: 1px solid #231815;
     padding: 0 16px;
     transition:all 0.2s ease-in;
     display: inline;
-    // font-size: 20px;
-    // line-height: 40px;
-    font-weight: 500;
-    // margin-bottom: 16px;
-    font-size: 22px;
-    line-height: 52px;
+    font-size: 18px;
+    line-height: 280%;
+    font-family: $font-sans;
+    letter-spacing: 3px;
+    font-weight: 400;
     &:after {
         content:"";
         width: 0;
@@ -261,20 +263,13 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    // background-color: darken(#fff, 5);
     li {
         margin: 0;
         padding: 12px 16px;
         font-size: 18px;
-        background: rgba(35,24,21,0.8);
-        // box-shadow: 0 2px 5px rgba(0,0,0,.4);
+        background: rgba(30,30,30,0.8);
         transition:all 0.15s ease-in;
         color: #fff;
-        &:hover, 
-        &.is-selected {
-        // color: #C9A063;
-        // background: #fff;
-        }
         &[rel="hide"] {
         display: none;
         }
