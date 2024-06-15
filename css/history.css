@@ -418,19 +418,19 @@ header .logo {
   }
 }
 
-header .logo a.pc {
+header .logo a .pc {
   display: block;
 }
 
-header .logo a.mob {
+header .logo a .mob {
   display: none;
 }
 
 @media (max-width: 1080px) {
-  header .logo a.pc {
+  header .logo a .pc {
     display: none;
   }
-  header .logo a.mob {
+  header .logo a .mob {
     display: block;
   }
 }
@@ -620,15 +620,24 @@ header #menu-toggle.active h6 {
 }
 
 .casepage header .logo {
-  width: 160px;
+  width: 180px;
 }
 
-.casepage header .logo a.pc {
-  display: none;
+.casepage header .logo a .pc {
+  display: none !important;
 }
 
-.casepage header .logo a.mob {
-  display: block;
+.casepage header .logo a .mob {
+  display: block !important;
+}
+
+@media (max-width: 1080px) {
+  .casepage header .logo a .pc {
+    display: none;
+  }
+  .casepage header .logo a .mob {
+    display: block;
+  }
 }
 
 .casepage header .nav_box {

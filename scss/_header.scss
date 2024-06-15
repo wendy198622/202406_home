@@ -39,11 +39,11 @@
                 width: 160px;
             }
             a{
-                &.pc{ display: block;}
-                &.mob{ display: none;}
+                .pc{ display: block;}
+                .mob{ display: none;}
                 @media (max-width:1080px){
-                    &.pc{display: none;}
-                    &.mob{ display: block;}
+                    .pc{display: none;}
+                    .mob{ display: block;}
                 }
             }
         }
@@ -197,10 +197,14 @@
                 background: none;
             }
             .logo{
-                width: 160px;
+                width: 180px;
                 a{
-                    &.pc{display: none;}
-                    &.mob{ display: block;}
+                    .pc{ display: none !important;}
+                    .mob{ display: block !important;}
+                    @media (max-width:1080px){
+                        .pc{display: none;}
+                        .mob{ display: block;}
+                    }
                 }
             }
 
