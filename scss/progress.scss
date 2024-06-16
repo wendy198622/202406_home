@@ -125,7 +125,8 @@
                         color: #fff;
                     }
                 }
-                a:hover{
+                &:hover{
+                    cursor: pointer;
                     .link{
                         span{
                             transform: translateX(4px);
@@ -136,5 +137,29 @@
             }
         }
     }
+}
+.swiper-button-prev, .swiper-button-next{
+    width: 44px !important;
+    background: #fff;
+    border-radius: 100px;
+    @media (max-width: 800px){
+        width: 32px !important;
+        height: 32px !important;
+    }
+    &:after{
+        display: none;
+    }
+    span{
+        font-size: 42px;
+        @media (max-width: 800px){
+            font-size: 28px;
+        }
+    }
+}
+.swiper-button-prev{
+    left: -20px;
+}
+.swiper-button-next{
+    right: -20px;
 }
 

@@ -26,6 +26,25 @@
         }
     }
 }
+.newspage{
+    .top{
+        header{
+            .nav_box{
+                ul{
+                    .news{
+                        a{
+                            padding-left: 0;
+                            letter-spacing: 3px;
+                        }
+                        &:before{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 .news_frame{
     padding: 100px 0;
@@ -137,5 +156,81 @@
             }
         }
     }
+}
+
+.newspage_frame{
+    padding-top: 160px;
+    .container{
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        // overflow: hidden;
+        @media (max-width: 1400px){
+            padding: 0 40px;
+        }
+        @media (max-width: 800px){
+            padding: 0 20px;
+        }
+        .info, .topic{
+            margin-top: 40px;
+            h2{
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 1.4;
+                letter-spacing: 2px;
+                margin-top: 10px;
+            }
+            h4{
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 1.2;
+                margin-top: 20px;
+            }
+            h3{
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 1.4;
+                letter-spacing: 2px;
+                margin-top: 40px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                box-sizing:border-box;
+            }
+            p{
+                font-size: 16px;
+                line-height: 1.4;
+                font-family: "Noto Sans TC", sans-serif;
+                letter-spacing: 2px;
+                margin-top: 12px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 4;
+                box-sizing:border-box;
+            }
+        }
+        .photo{
+            margin-top: 40px;
+        }
+        .link{
+            margin: 80px 0;
+            a{
+                display: inline-block;
+                color: #fff;
+                padding: 10px 20px;
+                font-size: 16px;
+                line-height: 1.4;
+                font-family: "Noto Sans TC", sans-serif;
+                letter-spacing: 2px;
+                background: #231815;
+                text-align: center;
+            }
+        }
+    }
+
 }
 
