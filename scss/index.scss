@@ -125,7 +125,7 @@
             justify-content: space-around;
             align-items: flex-start;
             position: relative;
-            @media (max-width: 1440px){
+            @media (max-width: 1200px){
                 flex-direction: column;
                 flex-direction: column;
             }
@@ -134,7 +134,7 @@
                 height: 0;
                 padding-bottom: 37.5%;
                 overflow: hidden;
-                @media (max-width: 1440px){
+                @media (max-width: 1200px){
                     width: 90%;
                     padding-bottom: 56%;
                     margin: 0 auto;
@@ -145,13 +145,13 @@
                 position: relative;
                 z-index: 2;
                 margin-right: -12%;
-                @media (max-width: 1440px){
+                @media (max-width: 1200px){
                     width: 90%;
                     margin: 40px auto 0;
                 }
                 .info{
                     width: 80%; 
-                    @media (max-width: 1440px){
+                    @media (max-width: 1200px){
                         width: 100%;
                     }
                     h5{
@@ -175,7 +175,7 @@
                 .photo_small{
                     width: 100%;
                     margin-top: 40px;
-                    @media (max-width: 1440px){
+                    @media (max-width: 1200px){
                         display: none;
                     }
                 }
@@ -186,7 +186,7 @@
                 position: absolute;
                 bottom: 0;
                 right: 60px;
-                @media (max-width: 1440px){
+                @media (max-width: 1200px){
                     width: 90%;
                     position: static;
                     bottom: auto;

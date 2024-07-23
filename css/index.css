@@ -1054,7 +1054,7 @@ footer .copyright {
   position: relative;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
   .home_cases .home_cases_box .caseitem {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1071,7 +1071,7 @@ footer .copyright {
   overflow: hidden;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
   .home_cases .home_cases_box .caseitem .photo_large {
     width: 90%;
     padding-bottom: 56%;
@@ -1086,7 +1086,7 @@ footer .copyright {
   margin-right: -12%;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
   .home_cases .home_cases_box .caseitem .detail {
     width: 90%;
     margin: 40px auto 0;
@@ -1097,7 +1097,7 @@ footer .copyright {
   width: 80%;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
   .home_cases .home_cases_box .caseitem .detail .info {
     width: 100%;
   }
@@ -1129,7 +1129,7 @@ footer .copyright {
   margin-top: 40px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
   .home_cases .home_cases_box .caseitem .detail .photo_small {
     display: none;
   }
@@ -1143,7 +1143,7 @@ footer .copyright {
   right: 60px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
   .home_cases .home_cases_box .caseitem .link {
     width: 90%;
     position: static;
