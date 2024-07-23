@@ -118,62 +118,100 @@
         padding: 60px 0;
     }
     .home_cases_box{
-        // padding-bottom: 40px;
         .caseitem{
-            // max-width: 1440px;
-            background: #fff;
-            padding: 40px;
+            // padding: 40px;
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-around;
-            align-items: center;
+            align-items: flex-start;
+            position: relative;
             @media (max-width: 1440px){
                 flex-direction: column;
+                flex-direction: column;
             }
-            @media (max-width: 1200px){
-                width: calc(100% - 120px);
-                margin: 0 auto;
-                padding: 20px;
-            }
-            .photo{
-                width: 62%;
+            .photo_large{
+                width: calc(1180/1920*100%);
+                height: 0;
+                padding-bottom: 37.5%;
+                overflow: hidden;
                 @media (max-width: 1440px){
-                    width: 100%;
+                    width: 90%;
+                    padding-bottom: 56%;
+                    margin: 0 auto;
                 }
             }
-            .info{
-                width: 34%; 
+            .detail{
+                width: calc(720/1920*100%);
+                position: relative;
+                z-index: 2;
+                margin-right: -12%;
                 @media (max-width: 1440px){
-                    width: 100%; 
-                    margin-top: 20px;
-                }   
-                h4{
-                    margin-bottom: 20px;
+                    width: 90%;
+                    margin: 40px auto 0;
                 }
-                .link{
-                    margin-top: 40px;
-                    background: $primary-color;
-                    display: inline-block;
-                    border-radius: 8px;
-                    a{
-                        padding: 10px 20px;
-                        color: #fff;
-                        letter-spacing: 2px;
-                        text-transform: uppercase;
-                        font-family: $font-en;
-                        font-weight: 500;
-                        span{
-                            vertical-align: middle;
-                            color: #fff;
-                            animation: more 1s infinite alternate;
-                        }
-                        @keyframes more {
-                            0%{ transform: translateX(0);}
-                            100%{ transform: translateX(5px);}                            
-                        }
+                .info{
+                    width: 80%; 
+                    @media (max-width: 1440px){
+                        width: 100%;
                     }
-
+                    h5{
+                        color: #fff;
+                    }
+                    h4{
+                        margin-bottom: 20px;
+                        font-size: 28px;
+                        color: #fff;
+                    }
+                    p{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 7;
+                        box-sizing:border-box;
+                        color: #fff;
+                    }
                 }
+                .photo_small{
+                    width: 100%;
+                    margin-top: 40px;
+                    @media (max-width: 1440px){
+                        display: none;
+                    }
+                }
+            }
+            .link{
+                background: #fff;
+                border-radius: 8px;
+                position: absolute;
+                bottom: 0;
+                right: 60px;
+                @media (max-width: 1440px){
+                    width: 90%;
+                    position: static;
+                    bottom: auto;
+                    right: auto;
+                    margin: 40px auto 0;
+                }
+                a{
+                    padding: 10px 20px;
+                    color: $primary-color;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    font-family: $font-en;
+                    font-weight: 500;
+                    text-align: center;
+                    span{
+                        vertical-align: middle;
+                        color: $primary-color;
+                        animation: more 1s infinite alternate;
+                    }
+                    @keyframes more {
+                        0%{ transform: translateX(0);}
+                        100%{ transform: translateX(5px);}                            
+                    }
+                }
+
             }
         }
         .swiper-slide{
@@ -185,9 +223,9 @@
         
         .swiper-button-prev{
             background: none;
-            left: 15%;
+            left: 10px;
             @media (max-width: 1200px){
-                left: 16px;
+                // left: 16px;
             }
             span{
                 color: #fff;
@@ -199,9 +237,9 @@
         }
         .swiper-button-next{
             background: none;
-            right: 15%;
+            right: 10px;
             @media (max-width: 1200px){
-                right: 16px;
+                // right: 16px;
             }
             span{
                 color: #fff;
@@ -231,7 +269,7 @@
         margin: 0 auto;
         position: relative;
         padding-top: 54px;
-        background: url(../img/title_bg.svg) center 70% no-repeat;
+        background: url(../img/title_bg.svg) center 200% no-repeat;
         background-size: contain;
         @media (max-width: 600px){
             width: 60%;
@@ -242,7 +280,7 @@
             line-height: 1.2;
             letter-spacing: 6px;
             text-align: center;
-            writing-mode: vertical-lr;
+            // writing-mode: vertical-lr;
             margin: 0 auto;
         }
         img{
