@@ -87,6 +87,9 @@ p{
     letter-spacing: 2px;
     text-align: justify;
     margin-top: 20px;
+    @media (max-width: 600px){
+        font-size: 16px;
+    }
 }
 
 input, button, select, textarea{
